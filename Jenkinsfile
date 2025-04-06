@@ -21,7 +21,7 @@ pipeline {
         stage("deploy") {
             steps {
                 script {
-                    def rmImage = "docker rmi santana20095/react-nodejs:1.0"
+                    def rmImage = "docker rmi 4ea8165a149f"
                     def pullImage = "docker pull santana20095/react-nodejs:1.1"
                     def dockerCmd = "docker run -p 3080:3000 -d santana20095/react-nodejs:1.1"
                     sshagent(['ec2-server-key']) {
