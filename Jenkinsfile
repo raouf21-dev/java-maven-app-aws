@@ -10,7 +10,7 @@ library identifier: 'aws-react-shared-library@main', retriever: modernSCM(
 pipeline {
     agent any
     tools {
-        maven 'Maven'
+        maven 'maven-3.9.9'
     }
     environment {
         IMAGE_NAME = 'santana20095/react-nodejs:1.1'
